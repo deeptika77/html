@@ -9,21 +9,45 @@
             margin:0;
             padding:0;
         }
+        body{
+            display:flex;
+            /* body bhitra lekheko bhayera tes bhitra ko element ie. box lai allign garcha */
+            /* yesle chai screen ko size anusar size chage garcha ie makes the website responsive */
+
+            justify-content: center;
+            /* alligns horizontally */
+
+            align-items: center;
+            /* aligns vertically */
+
+            height:100vh;
+            /* height le chai body bhitra bhayera body ko height determine garcha */
+            /* height le chai scfreen ma dekhini 100 persent view point lai center ma allign garcha. 
+            browser ko window lai viewport height bhancha */
+            /* justify-content and align-items only works with display:flex */
+        }
         .box{
             height:200px;
             width:200px;
             background-color: yellow;
             font-size: 20px;
-            padding:10 px;
+            padding:10 px; 
+            /* box ra text ko bich distance hercha  */
             text-align: center;
             border:4px solid red;
             margin: 20px;
             font-weight:700;
             border-radius:20px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /* display flex le chai jastai box bhitra lekhyo bhane box bhitra ko element lai manipulate garcha */
+    
         }
     </style>
 </head>
 <body>
+
     <div class="box">
         Hello world
     </div>

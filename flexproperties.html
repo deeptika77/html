@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ctrl+shift+i gare output herda arko form ma herna milcha jastai elements, console access garna paincha -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box Properties</title>
+    <style>
+        .flex-properties{
+            background-color: dodgerblue;
+            display:flex;
+            /* display: flex bina 1  2 3 box ma verticaly aaucha tara yesle horizontally banaucha */
+            flex-wrap:wrap;
+            /* yesle screen ma ateko dekhaucha na ateko tala aaucha  */
+        }
+        .flex-properties div{
+            /* .flex-properties bhitra ko div tag lai matra access garcha */
+            height:100px;
+            width:100px;
+            border:2px solid red;
+            margin:10px;
+            font-size: 30px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-properties">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    </div>
+    
+    <!-- div tag le section banaucha -->
+</body>
+</html>
