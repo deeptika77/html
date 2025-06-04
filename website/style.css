@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* for font: google icons */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PLayfair Display;
+    font-weight: 600;
+}
+body{
+    background-color: rgb(255, 180, 218);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.login-box{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column; 
+    /* zoom garda tei anusar responsive banaucha */
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    /* tyo bhanda tala ko element sanga ko distance manipulate garcha */
+}
+
+form input{
+    /* form bhitra bhako input tags lai manipulate garcha */
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* same as corner radius */
+}
+
+form button{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover{
+    /* tyo button ma hover garda colour change bhayera black huncha */
+    background-color: black;
+}
