@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+    <style>
+        .parent{
+            width:400px;
+            background-color: black;
+            color:aliceblue;
+            padding:20px;
+            /* padding halesi yesma jastai parent halya cha yo div box ra tya bhitra ko element bhitra 20px ko distance rakhcha */
+            text-align: center;
+            position:relative;
+            /* yo lekkhesi child ko position change garrda parent ko respect ma huncha 
+            yo rakhena bhane screen anusar huncha*/
+        }
+        .child{
+            width:100px;
+            background-color: dodgerblue;
+            color:aliceblue;
+            padding:5px;
+            position: absolute; 
+            /* parent ko relative ma child lai change garni ho bhanera indicate gareko jastai parent chai relative ma bhayo tara parent ko respect ma k lai change garni ho bhanera identify garna chai absolute le taha huncha */
+
+            top:0;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h2> Parent class</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur hic libero maiores pariatur accusamus soluta error fuga, ipsum accusantium culpa totam veniam obcaecati quis porro neque officia minima aliquid eveniet.
+        <div class="child"> 
+        <h2> Child class</h2>
+        </div>
+    </div>
+</body>
+</html>
